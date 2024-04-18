@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function Button({ title, onPress }) {
+export default function Button({ title, onPress, children }) {
   return (
     <View style={styles.buttonContainer}>
       <Pressable onPress={onPress} android_ripple={{ color: '#640233' }}>
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
 
   textButton: {
     color: '#fff',
-    fontSize: 15,
+    fontSize: 14,
+    fontFamily: 'open-sans',
   },
 });
